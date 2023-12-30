@@ -1,0 +1,141 @@
+body {
+    background-color:#721c1c;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+        
+  }
+  
+  
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@200&family=Kalnia&family=Kanit:ital,wght@1,300&family=Mountains+of+Christmas&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:ital,wght@1,100&display=swap');
+  svg{
+    width:90%;
+    height:90%;
+    visibility:hidden;
+   
+  }
+  
+  
+  h1 {
+
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    margin-top: -100px;
+    display:flex;
+    animation: parpadeo 0.5s infinite alternate;
+    
+  }
+  
+ 
+  
+  .button button {
+    position: absolute; /* Necesario para el resplandor */
+    top: 50%;
+
+    background-color: rgb(235, 34, 19); /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 19px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+  }
+  
+  /* Estilo para el enlace dentro del botón */
+  .button button a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+  }
+  
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+  .button button:hover {
+    background-color: rgb(250, 254, 253); /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px rgb(255, 94, 0), 0 0 20px rgb(128, 159, 150), 0 0 30px rgb(220, 229, 226); /* Efecto de resplandor amarillo */
+  }
+  
+  
+  .sparkle{
+    /* mix-blend-mode:luminosity */
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+body{
+    margin:0;
+}
+#container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background:rgb(170, 36, 10);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:#fff;
+    margin:0;
+    font-size: 10px;
+    font-family: 'Snowburst One', cursive;
+}
+.snow{
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:50px;
+    background-image: url(/An/an/snow.png);
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+}
+@keyframes animationSnow{
+    0%{
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(100px,50vh);
+    }
+}
+.merryText {
+  position: absolute;
+  font-family: "mountains_of_christmasregular";
+  fill: #ed8823;
+  text-anchor: middle;
+  font-size: 3.8em;
+  opacity: 0;
+  left: 35%;
+  bottom: 5%;
+  text-shadow:0 0 10px rgb(255, 94, 0), 0 0 20px rgb(128, 159, 150), 0 0 30px rgb(220, 229, 226); 
+
+}
+button{
+  color:#fff;
+  margin:0;
+  font-size: 50px;
+  box-shadow:0 0 10px rgb(255, 94, 0), 0 0 20px rgb(128, 159, 150), 0 0 30px rgb(220, 229, 226) ;
+  font-family: 'Snowburst One', cursive;
+}
+a{
+  color: #fff;
+  margin: 30px;
+}
